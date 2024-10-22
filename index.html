@@ -24,6 +24,62 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
+        .number {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .number span {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 10px;
+        }
+
+        /* Position numbers around the clock */
+        .number1 { transform: rotate(30deg); }
+        .number1 span { transform: rotate(-30deg) translateX(-50%); }
+        
+        .number2 { transform: rotate(60deg); }
+        .number2 span { transform: rotate(-60deg) translateX(-50%); }
+        
+        .number3 { transform: rotate(90deg); }
+        .number3 span { transform: rotate(-90deg) translateX(-50%); }
+        
+        .number4 { transform: rotate(120deg); }
+        .number4 span { transform: rotate(-120deg) translateX(-50%); }
+        
+        .number5 { transform: rotate(150deg); }
+        .number5 span { transform: rotate(-150deg) translateX(-50%); }
+        
+        .number6 { transform: rotate(180deg); }
+        .number6 span { transform: rotate(-180deg) translateX(-50%); }
+        
+        .number7 { transform: rotate(210deg); }
+        .number7 span { transform: rotate(-210deg) translateX(-50%); }
+        
+        .number8 { transform: rotate(240deg); }
+        .number8 span { transform: rotate(-240deg) translateX(-50%); }
+        
+        .number9 { transform: rotate(270deg); }
+        .number9 span { transform: rotate(-270deg) translateX(-50%); }
+        
+        .number10 { transform: rotate(300deg); }
+        .number10 span { transform: rotate(-300deg) translateX(-50%); }
+        
+        .number11 { transform: rotate(330deg); }
+        .number11 span { transform: rotate(-330deg) translateX(-50%); }
+        
+        .number12 { transform: rotate(0deg); }
+        .number12 span { transform: rotate(0deg) translateX(-50%); }
+
         .hand {
             position: absolute;
             bottom: 50%;
@@ -79,6 +135,20 @@
 <body>
     <div class="clock-container">
         <div class="clock">
+            <!-- Clock numbers -->
+            <div class="number number1"><span>1</span></div>
+            <div class="number number2"><span>2</span></div>
+            <div class="number number3"><span>3</span></div>
+            <div class="number number4"><span>4</span></div>
+            <div class="number number5"><span>5</span></div>
+            <div class="number number6"><span>6</span></div>
+            <div class="number number7"><span>7</span></div>
+            <div class="number number8"><span>8</span></div>
+            <div class="number number9"><span>9</span></div>
+            <div class="number number10"><span>10</span></div>
+            <div class="number number11"><span>11</span></div>
+            <div class="number number12"><span>12</span></div>
+
             <div class="hand hour-hand"></div>
             <div class="hand minute-hand"></div>
             <div class="hand second-hand"></div>
